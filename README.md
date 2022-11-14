@@ -1,8 +1,14 @@
 # kdl_trial_with_parser
 Obtained KDL tree using KDL parser. Performed Forward Kinematics on it. 
 
-treeGenerateTest.cpp is the main file in this package.
+This package contains 3 codes that pertain to my trial with the KDL library.
+Only the code "treeGenerateTest.cpp" is relevant.
 
-Please build package using catkin build and rosrun the node.
+First, please run "roscore"
+Next, run the code "rosrun kdl_with_parser treeGenerateTest". Input the joint values for the joints.
 
-To view results, please "rosrun rviz rviz" in a seperate terminal, change the frame to "world" and add a TF display in RViz.
+To view the TF for the end-effector, please run "rosrun rviz rviz" in a seperate terminal. Change the fixed frame to "world" and add a TF display.
+
+1) roscore
+2) rosrun kdl_with_parser treeGenerateTest
+3) rosrun rviz rviz (Change the fixed frame to "world" and add a TF display.)
